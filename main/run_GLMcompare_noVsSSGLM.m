@@ -1,23 +1,23 @@
-clear all;
+% clear all;
 
 
-malexflag = 0; % user flag
-if malexflag
-    %Meryem
-    path.code = 'C:\Users\mayucel\Documents\PROJECTS\CODES\GLM-BCI'; addpath(genpath(path.code)); % code directory
-    path.dir = 'C:\Users\mayucel\Google Drive\GLM_BCI_PAPER\RESTING_DATA'; % data directory
-    path.save = 'C:\Users\mayucel\Google Drive\GLM_BCI_PAPER\PROCESSED_DATA\'; % save directory
-    
-    %Meryem Laptop
-    %     path.code = 'C:\Users\m\Documents\GitHub\GLM-BCI'; addpath(genpath(path.code)); % code directory
-    %     path.dir = 'C:\Users\m\Documents\tCCA_GLM_PAPER\FB_RESTING_DATA'; % data directory
-    %     path.save = 'C:\Users\m\Documents\tCCA_GLM_PAPER\FB_RESTING_DATA'; % save directory
-else
-    %Alex
-    path.code = 'D:\Office\Research\Software - Scripts\Matlab\GLM-BCI'; addpath(genpath(path.code)); % code directory
-    path.dir = 'C:\Users\avolu\Google Drive\GLM_BCI_PAPER\RESTING_DATA'; % data directory
-    path.save = 'C:\Users\avolu\Google Drive\GLM_BCI_PAPER\PROCESSED_DATA\'; % save directory
-end
+% malexflag = 0; % user flag
+% if malexflag
+%     %Meryem
+%     path.code = 'C:\Users\mayucel\Documents\PROJECTS\CODES\GLM-BCI'; addpath(genpath(path.code)); % code directory
+%     path.dir = 'C:\Users\mayucel\Google Drive\GLM_BCI_PAPER\RESTING_DATA'; % data directory
+%     path.save = 'C:\Users\mayucel\Google Drive\GLM_BCI_PAPER\PROCESSED_DATA\'; % save directory
+%     
+%     %Meryem Laptop
+%     %     path.code = 'C:\Users\m\Documents\GitHub\GLM-BCI'; addpath(genpath(path.code)); % code directory
+%     %     path.dir = 'C:\Users\m\Documents\tCCA_GLM_PAPER\FB_RESTING_DATA'; % data directory
+%     %     path.save = 'C:\Users\m\Documents\tCCA_GLM_PAPER\FB_RESTING_DATA'; % save directory
+% else
+%     %Alex
+%     path.code = 'D:\Office\Research\Software - Scripts\Matlab\GLM-BCI'; addpath(genpath(path.code)); % code directory
+%     path.dir = 'C:\Users\avolu\Google Drive\GLM_BCI_PAPER\RESTING_DATA'; % data directory
+%     path.save = 'C:\Users\avolu\Google Drive\GLM_BCI_PAPER\PROCESSED_DATA\'; % save directory
+% end
 
 % #####
 % 50 or 100% hrf?
@@ -40,7 +40,8 @@ stlindet = true;
 sfoldername = '\CV_results_data';
 set(groot,'defaultFigureCreateFcn',@(fig,~)addToolbarExplorationButtons(fig))
 set(groot,'defaultAxesCreateFcn',@(ax,~)set(ax.Toolbar,'Visible','off'))
-sbjfolder = {'Subj86', 'Subj91', 'Subj92', 'Subj94', 'Subj95', 'Subj96', 'Subj97', 'Subj98', 'Subj99', 'Subj100', 'Subj101', 'Subj102','Subj103', 'Subj104'}; % potentially exclude Subj94 (only 4 channels HRF added because of motion)
+% sbjfolder = {'Subj86', 'Subj91', 'Subj92', 'Subj94', 'Subj95', 'Subj96', 'Subj97', 'Subj98', 'Subj99', 'Subj100', 'Subj101', 'Subj102','Subj103', 'Subj104'}; % potentially exclude Subj94 (only 4 channels HRF added because of motion)
+sbjfolder = {'Subj86'}; % potentially exclude Subj94 (only 4 channels HRF added because of motion)
 
 
 %% Options/Parameter Settings
