@@ -36,7 +36,7 @@ The following list points to the analysis scripts that generate the results and 
 - Figure 2:  .../aux functions/generate_Fig2_signals.m 
 - Figure 3:  .../lit rev data/create_piecharts.m
 - Figure 7a: .../main/plot_Features_SSvsNo.m
-- Figure 7b: .../aux functions/generate_Fig7_right_panel.m
+- Figure 7b: .../aux functions/generate_Fig7_right_panel.m (run .../main/run_GLMcompare_noVsSSGLM.m first before running this script)
 - Figure 8:  .../lit rev data/create_piecharts.m
 - Figure 9:  .../main/plot_Features_SSvsNo.m
 - Figure 10:  .../lit rev data/create_piecharts.m
