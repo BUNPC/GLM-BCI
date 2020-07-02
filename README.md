@@ -31,6 +31,7 @@ Please cite this work when using any of the presented methods or code.
 
 ## How To Reproduce Figures
 The following list points to the analysis scripts that generate the results and figures of the publication:
+- Please change path to code, data and save results inside pathSettings.m and run pathSettings.m first and then follow below scripts to get generate figures 
 - Figure 1:  .../lit rev data/create_piecharts.m
 - Figure 2:  .../aux functions/generate_Fig2_signals.m 
 - Figure 3:  .../lit rev data/create_piecharts.m
@@ -40,5 +41,5 @@ The following list points to the analysis scripts that generate the results and 
 - Figure 9:  .../main/plot_Features_SSvsNo.m
 - Figure 10:  .../lit rev data/create_piecharts.m
 - Figure 11: .../main/plot_Features_SSvsNo.m
-- Figure 12: .../main/classify_SSvsNo.m.m
+- Figure 12: .../main/classify_SSvsNo.m.m please note that this code depends on the BBCI toolbox that you can find [here](https://github.com/bbci/bbci_public)
 
